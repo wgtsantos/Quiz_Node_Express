@@ -6,13 +6,18 @@
 Crie uma nova pasta para o seu projeto.
 Abra um terminal nesta pasta.
 Execute o comando abaixo para criar um novo arquivo package.json.
-### npm init -y  
+```
+ npm init -y
+```
 
 ## Instalar Dependências:
 
 Instale o Express executando npm install express.
 Para facilitar o desenvolvimento, você pode instalar o Nodemon 
-### (npm install nodemon --save-dev) 
+
+```
+npm install nodemon --save-dev
+```
 Reinicia automaticamente o servidor quando você faz mudanças no código.
 
 ## Estrutura de Pastas:
@@ -28,5 +33,7 @@ No server.js, importe o Express e inicialize uma nova aplicação Express.
 ## Criar Views:
 
 Execute 
-### npm install ejs
+```
+ npm install ejs
+```
 Para usar o EJS como seu motor de view:
