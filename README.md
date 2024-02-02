@@ -12,7 +12,10 @@ Execute o comando abaixo para criar um novo arquivo package.json.
 
 ## Instalar Dependências:
 
-Instale o Express executando npm install express.
+Instale o Express executando
+```
+npm install express.
+```
 Para facilitar o desenvolvimento, você pode instalar o Nodemon 
 
 ```
