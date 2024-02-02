@@ -24,3 +24,9 @@ Crie as seguintes pastas:
 
 Crie um arquivo server.js.
 No server.js, importe o Express e inicialize uma nova aplicação Express.
+
+## Criar Views:
+
+Execute 
+### npm install ejs
+Para usar o EJS como seu motor de view:
