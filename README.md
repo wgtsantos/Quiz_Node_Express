@@ -33,6 +33,15 @@ Crie as seguintes pastas:
 Crie um arquivo server.js.
 No server.js, importe o Express e inicialize uma nova aplicação Express.
 
+```
+const express = require('express');
+const app = express();
+
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000');
+});
+```
+
 ## Criar Views:
 
 Execute 
