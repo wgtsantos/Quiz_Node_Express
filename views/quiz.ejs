@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz de Múltipla Escolha</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4"> Quiz de Informática </h1>
+        <form id="quizForm" action="/" method="post" class="mt-4">
+            <% questions.forEach((q, index) => { %>
+                <div class="quiz-slide <% if(index === 0) { %>current-slide<% } %>" id="slide<%= index %>">
+                    <div class="mb-3 text-left">
+                        <p class="font-weight-bold"><%= q.question %></p>
+                        <% q.options.forEach(option => { %>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="question<%= index %>" value="<%= option %>" id="question<%= index %><%= option %>">
+                                <label class="form-check-label" for="question<%= index %><%= option %>">
+                                    <%= option %>
+                                </label>
+                            </div>
+                        <% }); %>
+                    </div>
+                    <div class="button-container">
+                    <% if(index > 0) { %>
+                        <button type="button" class="btn btn-secondary prev-btn">Voltar</button>
+                    <% } %>
+                    <% if(index < questions.length - 1) { %>
+                        <button type="button" class="btn btn-primary next-btn">Avançar</button>
+                    <% } %>
+                    </div>
+                </div>
+            <% }); %>
+            <button type="submit" class="btn btn-success" id="submitBtn">Enviar Respostas</button>
+        </form>
+    </div>
+
+    <script src="/js/script.js">  </script>
+</body>
+</html>

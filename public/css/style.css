@@ -1,0 +1,30 @@
+
+.container {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; /* Altura total da viewport */
+}
+
+.form-check-label {
+    margin-left: 0.5rem; /* Espaçamento para alinhar as opções */
+}
+
+.quiz-slide {
+    display: none;
+}
+
+.current-slide {
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Alinha os botões aos extremos */
+    padding-top: 20px; /* Espaço acima dos botões */
+}
+
+#submitBtn {
+    display: none;
+}
